@@ -21,6 +21,7 @@ public class GameOfLife {
             {1, -1}, {1, 0}, {1, 1}
     };
 
+    private final BoundaryType boundaryType;
     // Use IntBinaryOperator instead of BiFunction to avoid boxing/unboxing
     private final IntBinaryOperator neighborCounter;
     private boolean[][] grid;
@@ -33,6 +34,7 @@ public class GameOfLife {
 
     // Constructor with boundary type selection
     public GameOfLife(BoundaryType boundaryType) {
+        this.boundaryType = boundaryType;
         grid = new boolean[HEIGHT][WIDTH];
         nextGrid = new boolean[HEIGHT][WIDTH];
 
@@ -48,6 +50,7 @@ public class GameOfLife {
     }
 
     public void run() {
+        System.out.println("Boundary type: " + boundaryType);
         initializeGrid();
         // Print initial state as Generation 0
         System.out.println("Generation: 0 (Initial State)");
