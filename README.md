@@ -49,8 +49,8 @@ The game evolves from the initial seed through repeated generations, where birth
 
 ## 💻 Technologies
 
-- Language: **Java**
-- Uses standard Java data structures and console output.
+- **Java**: Standard JDK, console output.
+- **Go**: Standard Go modules, console output.
 
 ---
 
