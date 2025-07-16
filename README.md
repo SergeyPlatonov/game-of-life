@@ -47,6 +47,24 @@ The game evolves from the initial seed through repeated generations, where birth
 
 ---
 
+## ⚙️ Configurable Constants
+
+These values can be changed directly in the source code to customize the behavior of the simulation.
+
+| Constant Name   | Description                             | Default Value |
+|------------------|-----------------------------------------|------|
+| `width`          | Width of the universe (grid)            | `25` |
+| `height`         | Height of the universe (grid)           | `25` |
+| `generations`    | Number of generations to simulate       | `10` |
+| `delayMs`        | Delay between generations (in ms)       | `100` |
+| `alive`          | Character for live cells                | `"■ "` |
+| `dead`           | Character for dead cells                | `". "` |
+| `boundaryType`   | Edge behavior: `Toroidal` or `Finite`   | `Toroidal` |
+
+You can modify these values at the top of the code to fit your simulation needs.
+
+---
+
 ## 💻 Technologies
 
 - **Java**: Standard JDK, console output.
@@ -61,3 +79,16 @@ Clone the repository:
 ```bash
 git clone https://github.com/SergeyPlatonov/game-of-life.git
 cd game-of-life
+```
+
+### Java
+
+Build using your preferred method.
+
+Run the main class to see Game of Life in action.
+
+### Go
+
+```bash
+go run main.go
+```
